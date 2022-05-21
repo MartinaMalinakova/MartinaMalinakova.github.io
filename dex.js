@@ -1,6 +1,8 @@
+ require('dotenv').config();
+ 
  //connect to Moralis server
- const serverUrl = "https://gputqiwoeam8.usemoralis.com:2053/server";
- const appId = "Gc8VjQmyuCv29buPmkjWr0CJPmZoqoVgQEiIY0Fs"; 
+ const serverUrl = "process.env.ServerUrl";
+ const appId = "process.env.appId"; 
  Moralis.start({ serverUrl, appId });
 
  Moralis
